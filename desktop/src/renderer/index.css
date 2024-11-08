@@ -1,0 +1,75 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap'); */
+
+@font-face {
+  font-family: 'Tajawal';
+  src: local('Tajawal'),
+    url('./assets/fonts/Tajawal-Regular.ttf') format('truetype');
+}
+html,
+body,
+#root,
+.app,
+.content {
+  height: 100%;
+  width: 100%;
+  font-family: 'Tajawal', sans-serif;
+}
+
+* {
+  font-family: 'Tajawal', sans-serif;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  display: flex;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #77777777;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b41a1a77;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #cccccc77;
+}
+
+.drop-zone-container-styles {
+  height: 511px;
+  border-radius: 4px;
+  border: 2px dashed #ccc;
+  background-color: transparent;
+  color: #ccc;
+  width: 100%;
+  position: relative;
+}
+.drop-zone-container-styles-dark {
+  height: 511px;
+  border-radius: 4px;
+  border: 2px dashed #72768177;
+  background-color: transparent;
+  color: #ccc;
+  width: 100%;
+  position: relative;
+}
+
+.drg {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-app-region: drag;
+}
+.drg:hover {
+  cursor: pointer;
+}
